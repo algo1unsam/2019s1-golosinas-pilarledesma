@@ -54,17 +54,21 @@ object oblea {
 }
 
 object chocolatin {
-	// hay que acordarse de *dos* cosas, el peso inicial y el peso actual
-	// el precio se calcula a partir del precio inicial
-	// el mordisco afecta al peso actual
+
 	var pesoInicial
-	var pesoActual
-	
-	/* al principio, el peso actual coincide con el inicial */
+	var pesoActual	
+
 	method pesoInicial(cuanto) { 
 		pesoInicial = cuanto
-		pesoActual = cuanto
-	}
+		pesoActual = cuanto}
+	
+	method precio() { return (0.5 * pesoInicial) }
+	method peso() { return pesoActual }
+	method mordisco() { pesoActual = pesoActual - 2}
+	method gusto() { return "chocolate" }
+	method libreGluten() { return false }
+	
+	
 }
 
 object golosinaBaniada {
