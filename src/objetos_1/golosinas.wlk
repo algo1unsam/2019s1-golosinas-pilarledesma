@@ -87,6 +87,26 @@ object golosinaBaniada {
 }
 
 object tuttifrutti {
-	// como manejar el cambio de sabor ??
+	var pesoInicial = 5
+	var property libreGluten
+	var property gustoActual = "frutilla"
+	
+	
+	method peso(){return pesoInicial}
+	method libreGluten(boolean){
+		libreGluten = boolean
+	}
+	method precio(){
+		if (self.libreGluten()) return 7 else return 10 
+	}
+	
+	method mordisco(){
+		if (gustoActual == "frutilla") 
+			gustoActual = "chocolate" 
+				else if (gustoActual == "chocolate") 
+					gustoActual = "naranja"
+						else (gustoActual == "naranja") 
+							gustoActual = "frutilla"
+	}	
 }
 
