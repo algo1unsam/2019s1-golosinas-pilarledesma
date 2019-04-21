@@ -107,6 +107,6 @@ object tuttifrutti {
 					gustoActual = "naranja"
 						else (gustoActual == "naranja") 
 							gustoActual = "frutilla"
-	}	
+	} 	
 }
 
