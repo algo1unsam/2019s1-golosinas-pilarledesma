@@ -19,7 +19,14 @@ object alfajor {
 }
 
 object caramelo {
-	// definir
+	var peso = 5
+	
+	method precio() { return 1 }
+	method peso() { return peso }
+	method mordisco() { peso = peso - 1 }
+	method gusto() { return "frutilla" }
+	method libreGluten() { return true }
+	
 }
 
 object chupetin {
