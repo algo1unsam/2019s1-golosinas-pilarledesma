@@ -17,8 +17,13 @@ object mariano {
 		bolsa.remove(unaGolosina)
 	}
 	
+	method hayGolosinaSinTACC(){
+		bolsa.any{ unaGolosina => !unaGolosina.libreGluten()}
+	}
 	
-	
+	method preciosCuidados(){
+		bolsa.all{ unaGolosina => unaGolosina.precio() <= 10}
+	}
 	
 	
 	
