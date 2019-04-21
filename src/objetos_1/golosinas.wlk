@@ -1,3 +1,5 @@
+import mariano.*
+
 object bombon {
 	var peso = 15
 	

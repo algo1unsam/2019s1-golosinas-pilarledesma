@@ -4,13 +4,23 @@ object mariano {
 
 	const bolsa =#{}
 	
-	method comprar(golosina) { bolsa.add(golosina) }
+	method comprar(unaGolosina) { bolsa.add(unaGolosina) }
 	method golosinas() {
 		return bolsa
 	}
 	
 	method probarGolosinas(){ 
-		bolsa.forEach{golosina => golosina.mordisco()}
+		bolsa.forEach{unaGolosina => unaGolosina.mordisco()}
 	}
+	
+	method desechar(unaGolosina){
+		bolsa.remove(unaGolosina)
+	}
+	
+	
+	
+	
+	
+	
 }
 
