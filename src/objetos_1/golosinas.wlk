@@ -9,7 +9,13 @@ object bombon {
 }
 
 object alfajor {
-	// definir
+	var peso = 300
+	
+	method precio() { return 12 }
+	method peso() { return peso }
+	method mordisco() { peso = peso * 0.8 }
+	method gusto() { return "chocolate" }
+	method libreGluten() { return false }
 }
 
 object caramelo {
