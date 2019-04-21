@@ -30,7 +30,15 @@ object caramelo {
 }
 
 object chupetin {
-	// definir
+	var peso = 7
+	
+	method precio() { return 2 }
+	method peso() { return peso }
+	method mordisco() { 
+		if (peso > 2 ) (peso = 0.9 * peso) 
+	}
+	method gusto() { return "naranja" }
+	method libreGluten() { return true }
 }
 
 object oblea {
