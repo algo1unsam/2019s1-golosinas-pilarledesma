@@ -5,9 +5,7 @@ object mariano {
 	const bolsa =#{}
 	
 	method comprar(unaGolosina) { bolsa.add(unaGolosina) }
-	method golosinas() {
-		return bolsa
-	}
+	method golosinas() { return bolsa }
 	
 	method probarGolosinas(){ 
 		bolsa.forEach{unaGolosina => unaGolosina.mordisco()}
@@ -32,6 +30,12 @@ object mariano {
 	method golosinasDeSabor(unSabor){
 		return bolsa.filter{ unaGolosina => unaGolosina.gusto() == unSabor }
 	}
+	
+	method sabores(){
+		return bolsa.map{unaGolosina => unaGolosina.gusto()}
+	}
+
+
 	
 }
 
