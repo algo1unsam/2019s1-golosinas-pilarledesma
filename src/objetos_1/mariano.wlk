@@ -35,7 +35,15 @@ object mariano {
 		return bolsa.map{unaGolosina => unaGolosina.gusto()}
 	}
 
-
+	method golosinaMasCara(){
+		return bolsa.max{ unaGolosina => unaGolosina.precio() }
+	}
+	
+	method pesoGolosinas(){
+		return bolsa.sum{ unaGolosina => unaGolosina.peso()}
+	} 
+	
+	
 	
 }
 
