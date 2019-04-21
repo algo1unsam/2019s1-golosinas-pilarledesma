@@ -42,7 +42,15 @@ object chupetin {
 }
 
 object oblea {
-	// definir
+	var peso = 250
+	
+	method precio() { return 5 }
+	method peso() { return peso }
+	method mordisco() { 
+		if (peso > 70 ) (peso = peso * 0.5) else ( peso = peso * 0.75 ) 
+	}
+	method gusto() { return "vainilla" }
+	method libreGluten() { return false }
 }
 
 object chocolatin {
