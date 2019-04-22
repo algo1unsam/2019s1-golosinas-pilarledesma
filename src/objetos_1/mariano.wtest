@@ -8,9 +8,7 @@ describe "tests de mariano" {
 		mariano.comprar(chocolatin)
 		mariano.comprar(caramelo)
 		mariano.comprar(bombon)
-		mariano.agregarGolosinasDeseadas(caramelo)
-		mariano.agregarGolosinasDeseadas(tuttifrutti)
-		mariano.agregarGolosinasDeseadas(bombon)
+
 	}
 
 	test "test comprar" {
@@ -37,10 +35,6 @@ describe "tests de mariano" {
 		mariano.comprar(caramelo)
 		mariano.comprar(bombon)
 		assert.equals(#{caramelo,bombon}, mariano.golosinasDeSabor(unSabor))
-	}
-	
-	test "golosinasDeseadas"{
-		assert.equals(#{tuttifrutti}, mariano.golosinasFaltantes())
 	}
 	
 }
