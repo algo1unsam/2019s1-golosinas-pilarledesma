@@ -3,6 +3,9 @@ import golosinas.*
 object mariano {
 
 	const bolsa =#{}
+	const golosinasDeseadas =#{}
+	const gustosDeseados =#{}
+	
 	
 	method comprar(unaGolosina) { bolsa.add(unaGolosina) }
 	method golosinas() { return bolsa }
@@ -43,6 +46,15 @@ object mariano {
 		return bolsa.sum{ unaGolosina => unaGolosina.peso()}
 	} 
 	
+	method agregarGolosinasDeseadas(unaGolosina){ golosinasDeseadas.add(unaGolosina)}
+	
+	method agregarGustosDeseados(unaGolosina){ gustosDeseados.add(unaGolosina)}	
+	
+	
+	//revisar estos dos metodos
+	method golosinasFaltantes(){
+		return golosinasDeseadas.difference(bolsa)
+	}
 	
 	
 }
